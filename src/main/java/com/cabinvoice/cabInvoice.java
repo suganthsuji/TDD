@@ -10,6 +10,13 @@ public class cabInvoice {
         }
         else return cost;
     }
+    public double calculateFareforPremium(double time,double distance){
+        double cost=distance*20 + time*2;
+        if((distance*20 + time*2) <20){
+            return 20;
+        }
+        else return cost;
+    }
     //Calculate the Total Fare for Multiple Rides
     public double calculateTotalFare(double[][] rideArray){
         double totalFare = 0;
