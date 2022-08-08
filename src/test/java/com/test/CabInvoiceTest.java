@@ -15,7 +15,16 @@ public class CabInvoiceTest {
         Assert.assertEquals(60,result,0);
 
     }
-    //testing Multiple Rides
+    @Test
+    public void givenTwoIntegerWhencalculateFareforPremiumShouldFare(){
+        cabInvoice cabinvoice=new cabInvoice();
+        Double result=cabinvoice.calculateFareforPremium(10,5);
+        Assert.assertEquals(60,result,0);
+
+    }
+
+
+//testing Multiple Rides
     @Test
     public void givenMultipleRidesWhenCalculateShouldReturnTotalFare(){
         cabInvoice cabinvoice=new cabInvoice();
